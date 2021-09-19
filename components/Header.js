@@ -23,8 +23,8 @@ function Header() {
 			<div className="flex items-center">
 				<Image
 					src="https://links.papareact.com/5me"
-					width={40}
-					height={40}
+					width={35}
+					height={35}
 					layout="fixed"
 				/>
 				<div className="flex ml-2 items-center rounded-full bg-gray-100 p-2">
