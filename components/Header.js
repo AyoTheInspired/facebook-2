@@ -59,7 +59,9 @@ function Header() {
 					layout="fixed"
 					src={session.user.image}
 				/>
-				<p classname="font-semibold pr-3 whitespace-nowrap">Ayo Abimbola</p>
+				<p className="font-semibold pr-3 whitespace-nowrap">
+					{session.user.name}
+				</p>
 				<ViewGridIcon className="icon" />
 				<ChatIcon className="icon" />
 				<BellIcon className="icon" />
