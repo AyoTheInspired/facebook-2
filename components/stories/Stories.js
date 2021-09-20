@@ -3,26 +3,26 @@ import StoryCard from "./StoryCard";
 const stories = [
 	{
 		name: "Ayo Abimbola",
-		src: "https://links.papareact.com/zcf",
-		profile: "https://links.papareact.com/l4v",
+		src: "/images/ayo.jpg",
+		profile: "/images/ayo.jpg",
 	},
 	{
-		name: "Charles Cole",
+		name: "Elon Musk",
 		src: "https://links.papareact.com/4zn",
 		profile: "https://links.papareact.com/kxk",
 	},
 	{
-		name: "John Doe",
+		name: "Jeff Bezos",
 		src: "https://links.papareact.com/k2j",
 		profile: "https://links.papareact.com/f0p",
 	},
 	{
-		name: "Bill Gates",
+		name: "Mark Zuckerberg",
 		src: "https://links.papareact.com/xql",
 		profile: "https://links.papareact.com/snf",
 	},
 	{
-		name: "Elon Musk",
+		name: "Bill Gates",
 		src: "https://links.papareact.com/4u4",
 		profile: "https://links.papareact.com/zvy",
 	},
