@@ -11,6 +11,7 @@ import {
 	DesktopComputerIcon,
 	UsersIcon,
 } from "@heroicons/react/solid";
+import SidebarRow from "./SidebarRow";
 
 function Sidebar() {
 	const [session, loading] = useSession();
