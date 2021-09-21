@@ -3,6 +3,8 @@ import { useSession } from "next-auth/client";
 import { CameraIcon, VideoCameraIcon } from "@heroicons/react/solid";
 import { EmojiHappyIcon } from "@heroicons/react/outline";
 import { useRef } from "react";
+import { db } from "../firebase";
+import firebase from "firebase";
 
 function InputBox() {
 	const [session] = useSession();
@@ -10,6 +12,18 @@ function InputBox() {
 
 	const sendPost = (e) => {
 		e.preventDefault();
+
+		if (!inputRef.current.value) return;
+
+		db.collection("posts").add({
+			message: inputRef.current.value,
+			name: session.user.name,
+			email: session.user.email,
+			image: session.user.image,
+			timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+		});
+
+		inputRef.current.value = "";
 	};
 
 	return (
