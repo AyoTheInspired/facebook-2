@@ -28,7 +28,7 @@ function InputBox() {
 			.then((doc) => {
 				if (imageToPost) {
 					const uploadTask = storage
-						?.ref(`posts${doc.id}`)
+						?.ref(`posts/${doc.id}`)
 						.putString(imageToPost, "data_url");
 
 					removeImage();
