@@ -1,5 +1,5 @@
 import InputBox from "./InputBox";
-import Posts from "./Posts";
+import PostsCollection from "./posts/PostsCollection";
 import Stories from "./stories/Stories";
 
 function Feed() {
@@ -8,7 +8,7 @@ function Feed() {
 			<div className="mx-auto max-w-md md:max-w-lg lg:max-w-2xl">
 				<Stories />
 				<InputBox />
-				<Posts />
+				<PostsCollection />
 			</div>
 		</div>
 	);

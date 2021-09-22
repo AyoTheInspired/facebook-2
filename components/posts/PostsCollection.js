@@ -1,8 +1,8 @@
 import { useCollection } from "react-firebase-hooks/firestore";
-import { db } from "../firebase";
-import Post from "./Post";
+import { db } from "../../firebase";
+import SinglePost from "./SinglePost";
 
-function Posts() {
+function PostsCollection() {
 	const [realtimePosts, loading, error] = useCollection(
 		db.collection("posts").orderBy("timestamp", "desc")
 	);
@@ -10,7 +10,7 @@ function Posts() {
 	return (
 		<div>
 			{realtimePosts?.docs.map((post) => (
-				<Post
+				<SinglePost
 					key={post.id}
 					name={post.data().name}
 					message={post.data().message}
@@ -24,4 +24,4 @@ function Posts() {
 	);
 }
 
-export default Posts;
+export default PostsCollection;
