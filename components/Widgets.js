@@ -8,7 +8,6 @@ const contacts = [
 	{ src: "http://links.papareact.com/zvy", name: "Bill Gates" },
 	{ src: "http://links.papareact.com/snf", name: "Mark Zuckerberg" },
 	{ src: "http://links.papareact.com/d0c", name: "Harry Potter" },
-	{ src: "http://links.papareact.com/6gg", name: "The Queen" },
 	{ src: "http://links.papareact.com/r57", name: "James Bond" },
 ];
 
