@@ -14,5 +14,5 @@ module.exports = {
 			textColor: ["visited", "group-hover"],
 		},
 	},
-	plugins: [],
+	plugins: [require("tailwind-scrollbar-hide")],
 };
